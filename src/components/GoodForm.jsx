@@ -67,7 +67,7 @@ function GoodForm() {
         <div className="form-group">
         <label>Profissão</label>
         <select
-          {...register('profession', { validate: (value) => value != 0})}
+          {...register('profession', { validate: (value) => value !== 0})}
           className={errors?.profession && "input-error"}
         >
           <option value="0">Selecione sua profissão...</option>
